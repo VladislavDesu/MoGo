@@ -185,7 +185,6 @@ h3 {
   width: 100%;
   max-width: 970px;
   margin: 0 auto;
-  margin-bottom: 105px;
 }
 
 .section__title::after {
@@ -203,6 +202,7 @@ h3 {
 
 /*About*/
 .about__images {
+  margin-top: 105px;
   display: flex;
   justify-content: space-between;
 }
@@ -279,4 +279,39 @@ h3 {
 .stat__text {
   font-size: 14px;
   text-transform: uppercase;
+}
+/*Service*/
+.section__service {
+  padding-top: 110px;
+  padding-bottom: 120px;
+  max-height: 650px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item {
+  position: relative;
+  padding-left: 90px;
+  width: 400px;
+}
+
+.services__line {
+  height: 1px;
+  background-color: #999;
+  margin: 45px 0;
+}
+
+.services__img {
+  position: absolute;
+  left: 30px;
+}
+
+.services__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 10px;
 }
