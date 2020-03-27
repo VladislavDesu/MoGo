@@ -26,7 +26,7 @@ h3 {
   font-family: 'Kaushan Script',sans-serif;
   color: #000;
 }
-/* Container */
+/* container */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -314,4 +314,24 @@ h3 {
   text-transform: uppercase;
   color: #333;
   margin-bottom: 10px;
+}
+/*design*/
+.section__design {
+  padding-top: 88px;
+  min-height: 850px;
+  background-image: url('../images/design/bg-design.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.devices {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.devices .device--iphone {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
 }
