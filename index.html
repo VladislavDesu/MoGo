@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300,400,500,700,900|Roboto:300i,400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <title>MoGo</title>
 </head>
@@ -20,8 +20,8 @@
         <div class="header__nav">
           <ul class="nav">
             <li><a class="nav__link active" href="#about">about</a></li>
-            <li><a class="nav__link" href="#service">serice</a></li>
-            <li><a class="nav__link" href="#work">work</a></li>
+            <li><a class="nav__link" href="#service">service</a></li>
+            <li><a class="nav__link" href="#wedo">wedo</a></li>
             <li><a class="nav__link" href="#blog">blog</a></li>
             <li><a class="nav__link" href="#contact">contact</a></li>
           </ul>
@@ -34,7 +34,7 @@
       </div>
       <div class="header__bottom">
         <div class="slider__item active"><span>01</span> intro</div>
-        <div class="slider__item"><span>02</span> work</div>
+        <div class="slider__item"><span>02</span> wedo</div>
         <div class="slider__item"><span>03</span> about</div>
         <div class="slider__item"><span>04</span> contacts</div>
       </div>
@@ -55,23 +55,29 @@
           </p>
         </div>
       </div>
-      <div class="about__images">
-        <div class="about__item">
-          <div class="about__img">
-            <img src="images/about/about1.jpg" alt="macbok and ipad on table">
-            <div class="about__text">super team</div>
+      <div class="card__images">
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="images/about/about1.jpg" alt="flower on table">
+              <div class="card__text card--user">super team</div>
+            </div>
           </div>
         </div>
-        <div class="about__item">
-          <div class="about__img">
-            <img src="images/about/about2.jpg" alt="headset and iphone on table">
-            <div class="about__text">super team</div>
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="images/about/about2.jpg" alt="flower on table">
+              <div class="card__text card--user">super team</div>
+            </div>
           </div>
         </div>
-        <div class="about__item">
-          <div class="about__img">
-            <img src="images/about/about3.jpg" alt="flower on table">
-            <div class="about__text">super team</div>
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="images/about/about3.jpg" alt="flower on table">
+              <div class="card__text card--user">super team</div>
+            </div>
           </div>
         </div>
       </div>
@@ -105,10 +111,10 @@
     </div>
   </div>
 
-  <div class="section__service">
+  <div class="section__services">
     <div class="container">
       <div class="section__header">
-        <h3>We work with</h3>
+        <h3>We wedo with</h3>
         <h2 class="section__title">amazing services</h2>
       </div>
       <div class="services">
@@ -161,7 +167,7 @@
     </div>
   </div>
 
-  <div class="section__design">
+  <div class="section__design design--bg">
     <div class="container">
       <div class="section__header">
         <h3>For all devices</h3>
@@ -174,7 +180,7 @@
     </div>
   </div>
 
-  <div class="section__work">
+  <div class="section__wedo">
     <div class="container">
       <div class="section__header">
         <h3>Service</h3>
@@ -187,15 +193,15 @@
           </p>
         </div>
       </div>
-      <div class="our__work">
-        <div class="work__item">
-          <img src="images/work/work-img.png" alt="man on photo">
+      <div class="our__wedo">
+        <div class="wedo__item">
+          <img src="images/wedo/wedo-img.png" alt="man on photo">
         </div>
-        <div class="work__item">
-          <div class="block__list">
+        <div class="wedo__item">
+          <div class="block__list active">
             <div class="list__item">
               <div class="list__header">
-                <img class="list__icon" src="images/work/photography.png" alt="icon">
+                <img class="list__icon" src="images/wedo/photography.png" alt="icon">
                 <div class="list__title">photography</div>
               </div>
               <div class="list__content">
@@ -213,7 +219,7 @@
           <div class="block__list">
             <div class="list__item">
               <div class="list__header">
-                <img class="list__icon" src="images/work/creativity.png" alt="icon">
+                <img class="list__icon" src="images/wedo/creativity.png" alt="icon">
                 <div class="list__title">creativity</div>
               </div>
               <div class="list__content">
@@ -231,7 +237,7 @@
           <div class="block__list">
             <div class="list__item">
               <div class="list__header">
-                <img class="list__icon" src="images/work/webdesign.png" alt="icon">
+                <img class="list__icon" src="images/wedo/webdesign.png" alt="icon">
                 <div class="list__title">web design</div>
               </div>
               <div class="list__content">
@@ -251,27 +257,297 @@
     </div>
   </div>
 
-  <div class="reviews">
+  <div class="reviews gray--bg">
     <div class="container">
 
       <div class="reviews__block">
-        <a class="review__btn review--btn--prev" href="#">Prev</a>
-        <a class="review__btn review--btn--next" href="#">Next</a>
-        <div class="review__item">
-          <div class="review__icon">
+        <a class="reviews__btn reviews--btn--prev" href="#">Prev</a>
+        <a class="reviews__btn reviews--btn--next" href="#">Next</a>
+        <div class="reviews__item">
+          <div class="reviews__icon">
             <img src="images/reviews/message.png" alt="icon">
           </div>
-          <div class="review__text">
+          <div class="reviews__text">
             <p>
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna
               aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
             </p>
           </div>
-          <div class="review__author">Jon Doe</div>
+          <div class="reviews__author">Jon Doe</div>
         </div>
       </div>
 
+    </div>
+  </div>
+
+  <div class="section__team">
+    <div class="container">
+      <div class="section__header">
+        <h3>Who we are</h3>
+        <h2 class="section__title">meet our team</h2>
+        <div>
+          <p class="section__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Alias tenetur aliquid aliquam praesentium similique natus suscipit dignissimos,
+            perferendis sapiente aut.
+          </p>
+        </div>
+      </div>
+      <div class="card__images">
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="images/team/team1.jpg" alt="headset and iphone on table">
+              <div class="card__text">
+                <div class="social">
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__info">
+            <h4>Matthew Dix</h4>
+            <h5>Graphic Design</h5>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="images/team/team2.jpg" alt="headset and iphone on table">
+              <div class="card__text">
+                <div class="social">
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__info">
+            <h4>Christopher Campbell</h4>
+            <h5>Branding/UX design</h5>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="card__inner">
+            <div class="card__img">
+              <img src="images/team/team3.jpg" alt="headset and iphone on table">
+              <div class="card__text">
+                <div class="social">
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                  <a class="social__item" href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__info">
+            <h4>Michael Fertig </h4>
+            <h5>Developer</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="logos gray--bg">
+    <div class="container">
+      <div class="logos__block">
+        <div class="logos__item">
+          <img src="images/logos/logo.png" alt="logo photo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section__works">
+    <div class="container">
+      <div class="section__header">
+        <h3>What we do</h3>
+        <h2 class="section__title">some of our work</h2>
+        <div>
+          <p class="section__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Alias tenetur aliquid aliquam praesentium similique natus suscipit dignissimos,
+            perferendis sapiente aut.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="works">
+      <div class="works__col">
+        <div class="works__item">
+          <img class="works__image" src="images/works/works1.jpg" alt="man and sea">
+          <div class="works__info">
+            <div class="works__title">creatively designed</div>
+            <div class="works__text">Lorem ipsum dolor sit</div>
+          </div>
+        </div>
+        <div class="works__item">
+          <img class="works__image" src="images/works/works2.jpg" alt="bridge">
+          <div class="works__info">
+            <div class="works__title">creatively designed</div>
+            <div class="works__text">Lorem ipsum dolor sit</div>
+          </div>
+        </div>
+      </div>
+      <div class="works__col">
+        <div class="works__item">
+          <img class="works__image" src="images/works/works3.jpg" alt="the ceiling">
+          <div class="works__info">
+            <div class="works__title">creatively designed</div>
+            <div class="works__text">Lorem ipsum dolor sit</div>
+          </div>
+        </div>
+        <div class="works__item">
+          <img class="works__image" src="images/works/works4.jpg" alt="buildings">
+          <div class="works__info">
+            <div class="works__title">creatively designed</div>
+            <div class="works__text">Lorem ipsum dolor sit</div>
+          </div>
+        </div>
+      </div>
+      <div class="works__col">
+        <div class="works__item">
+          <img class="works__image" src="images/works/works5.jpg" alt="meduza">
+          <div class="works__info">
+            <div class="works__title">creatively designed</div>
+            <div class="works__text">Lorem ipsum dolor sit</div>
+          </div>
+        </div>
+      </div>
+      <div class="works__col">
+        <div class="works__item">
+          <img class="works__image" src="images/works/works6.jpg" alt="the glass ceiling">
+          <div class="works__info">
+            <div class="works__title">creatively designed</div>
+            <div class="works__text">Lorem ipsum dolor sit</div>
+          </div>
+        </div>
+        <div class="works__item">
+          <img class="works__image" src="images/works/works7.jpg" alt="building">
+          <div class="works__info">
+            <div class="works__title">creatively designed</div>
+            <div class="works__text">Lorem ipsum dolor sit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="reviews__block">
+        <a class="reviews__btn reviews--btn--prev" href="#">Prev</a>
+        <a class="reviews__btn reviews--btn--next" href="#">Next</a>
+        <div class="reviews__item">
+          <div class="reviews__icon">
+            <img class="photo__author" src="images/works/review1.png" alt="icon">
+          </div>
+          <div class="reviews__text">
+            <p>
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+            </p>
+          </div>
+          <div class="reviews__author">Joshua Earle</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section__clients clients--bg">
+    <div class="container">
+      <div class="section__header">
+        <h3>Happy Clients</h3>
+        <h2 class="section__title">what people say</h2>
+      </div>
+      <div class="clients">
+        <div class="clients__item">
+          <img class='clients__photo' src="images/clients/client1.png" alt="client photo">
+          <div class="clients__content">
+            <h4>Matthew Dix</h4>
+            <h5>Graphic Design</h5>
+            <div class="clients__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="clients__item">
+          <img class='clients__photo' src="images/clients/client2.png" alt="client photo">
+          <div class="clients__content">
+            <h4>Nick Karvounis</h4>
+            <h5>Graphic Design</h5>
+            <div class="clients__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="clients__item">
+          <img class='clients__photo' src="images/clients/client3.png" alt="client photo">
+          <div class="clients__content">
+            <h4>Jaelynn Castillo</h4>
+            <h5>Graphic Design</h5>
+            <div class="clients__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="clients__item">
+          <img class='clients__photo' src="images/clients/client4.png" alt="client photo">
+          <div class="clients__content">
+            <h4>Mike Petrucci</h4>
+            <h5>Graphic Design</h5>
+            <div class="clients__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
