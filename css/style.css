@@ -42,7 +42,8 @@ h5 {
 /*container*/
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1230px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 /*header*/
@@ -78,13 +79,13 @@ h5 {
 
 }
 
-.header__middle p {
+.header__title {
   font-family: 'Kaushan Script', sans-serif;
   font-size:  72px;
   margin-bottom: 20px;
 }
 
-.header__middle h1::after {
+.header__middle .header__promo::after {
   content: '';
   display: block;
   width: 60px;
@@ -123,7 +124,7 @@ h5 {
   display: block;
   position: absolute;
   top: -3px;
-  width: 70px;
+  width: 30%;
   height: 3px;
   background-color: #f38181;
 }
@@ -147,7 +148,7 @@ h5 {
 .nav__link {
   position: relative;
   color: #fff;
-  margin-left: 50px;
+  margin-left: 45px;
   text-decoration: none;
   transition: color .1s linear;
 }
@@ -317,7 +318,6 @@ h5 {
 
 .header__page {
   width: 100%;
-  padding: 0 15px;
   background-image: url('../images/bg-images/bg-header.png');
   background-position: center;
   background-size: cover;
@@ -1012,4 +1012,74 @@ margin-right: 20px;
 .copyright a {
   text-decoration: none;
   color: #f38181;
+}
+
+
+@media (max-width: 1230px) {
+
+  .header__title {
+    font-size: 52px;
+  }
+
+  .header__promo {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 990px) {
+
+  .header__title {
+    font-size: 32px;
+  }
+
+  .header__promo {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 770px) {
+  .header__inner {justify-content: space-around;}
+  .section__about {
+    padding: 40px 0;
+  }
+
+  .section__title {
+    font-size: 24px;
+  }
+
+  .section__header h3 {
+    font-size: 22px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .slider__text {
+    display: none;
+  }
+
+  .header__title {
+    font-size: 22px;
+  }
+
+  .header__promo {
+    font-size: 40px;
+  }
+
+  .section__title::after {
+    margin: 15px auto;
+  }
+}
+
+
+@media (max-width: 575px) {
+
+  .header__title {
+    font-size: 22px;
+  }
+
+  .header__promo {
+    font-size: 40px;
+  }
 }
