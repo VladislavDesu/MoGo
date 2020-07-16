@@ -497,6 +497,10 @@ h5 {
   justify-content: space-between;
 }
 
+wedo__item {
+  width: 50%;
+}
+
 /*block list*/
 .block__list {
   width: 100%;
