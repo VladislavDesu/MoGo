@@ -497,7 +497,8 @@ h5 {
   justify-content: space-between;
 }
 
-wedo__item {
+.wedo__item {
+  margin-right: 10px;
   width: 50%;
 }
 
@@ -1039,7 +1040,6 @@ margin-right: 20px;
 }
 
 @media (max-width: 990px) {
-  .
   .header__title {
     font-size: 32px;
   }
